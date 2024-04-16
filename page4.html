@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, sans-serif;
+            width: 375px;
+            height: 800px;
+            position: relative;
+            background-color: white;
+            overflow: hidden;
+        }
+        .top-image {
+            width: 375px;
+            height: 44px;
+            margin: 0;
+            padding: 0;
+        }
+        .create-account-text {
+            width: 163px;
+            height: 23px;
+            position: absolute;
+            top: 68px;
+            left: 16px;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 23px;
+            text-align: left;
+            color: black;
+            opacity: 1;
+        }
+
+        .rectangle {
+            width: 343px;
+            height: 50px;
+            position: absolute;
+            border-radius: 12px;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: text; /* Make the rectangles text-selectable */
+        }
+
+        .text-inside-rectangle {
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15px;
+            text-align: center;
+            color: #7F7F7F;
+            opacity: 1;
+        }
+
+        .login-link {
+            width: 195px;
+            height: 15px;
+            position: absolute;
+            top: 756px;
+            left: 90px;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            text-align: left;
+            color: black;
+            opacity: 1;
+        }
+
+        .login-span {
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            text-align: left;
+            color: black;
+        }
+
+        .google-icon {
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            top: 699px;
+            left: 147px;
+            opacity: 1;
+            cursor: pointer; /* Add cursor pointer */
+        }
+
+        .fb-icon {
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            top: 699px;
+            left: 214px;
+            background-color: #1A7AEB;
+            opacity: 1;
+            cursor: pointer; /* Add cursor pointer */
+        }
+
+        .bottom-line {
+            width: 155px;
+            height: 0px;
+            position: absolute;
+            top: 655px;
+            left: 16px;
+            gap: 0px;
+            border: 0.5px solid var(--gray-100, #7F7F7F);
+            opacity: 0;
+            angle: 0 deg;
+        }
+
+        .bottom-text {
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.63px;
+            text-align: left;
+            color: black;
+        }
+
+        .blue-rectangle {
+            width: 343px;
+            height: 50px;
+            position: absolute;
+            top: 595px;
+            left: 16px;
+            background-color: #7B91FF;
+            border-radius: 12px;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blue-text {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            opacity: 1;
+        }
+
+        .forgot-password {
+            width: 140px;
+            height: 15px;
+            position: absolute;
+            top: 269px;
+            left: 21px;
+            gap: 0px;
+            opacity: 0;
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.63px;
+            text-align: left;
+            color: #7F7F7F;
+        }
+
+        .or-text {
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+            text-align: center;
+            color: black;
+            position: absolute;
+            top: 665px;
+            left: 110px; /* Adjusted position */
+            width: 150px; /* Adjusted width */
+        }
+
+        /* Style for the input fields */
+        input[type="text"], input[type="password"], input[type="email"] {
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 10px;
+            width: 80%; /* Adjust width as needed */
+            box-sizing: border-box;
+            z-index: 1; /* Ensure input fields are on top */
+            background-color: transparent; /* Make input fields transparent */
+            color: black; /* Set text color */
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="./page all.jpeg" alt="Top Image" class="top-image">
+    <div class="create-account-text">Welcome back</div>
+    <div class="rectangle" style="top: 135px; left: 16px; background-color: #F1F1F1;">
+        <input type="text" placeholder="Email" style="width: 90%; border: none; background: none;">
+    </div>
+    <div class="rectangle" style="top: 209px; left: 16px; background-color: #F1F1F1;">
+        <input type="password" placeholder="Password" style="width: 90%; border: none; background: none;">
+    </div>
+    <div class="forgot-password">Forgot your password?</div>
+    <div class="bottom-line"></div>
+    <a href="page5.html" class="blue-rectangle">
+        <div class="blue-text">Sign in</div>
+    </a>
+    <div class="or-text">-------------OR-------------</div> <!-- Added this line -->
+    <div class="login-link">Don't have an account? <a href="page3.html" class="login-span">Create.</a></div>
+    <a href="https://accounts.google.com" target="_blank">
+        <img class="google-icon" src="./page 33 and 44.jpeg" alt="Google Icon">
+    </a>
+    <a href="https://www.facebook.com" target="_blank">
+        <img class="fb-icon" src="./page 3 and 4.jpeg" alt="Facebook Icon">
+    </a>
+</body>
+</html>
